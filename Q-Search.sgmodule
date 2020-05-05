@@ -45,7 +45,7 @@
 
 # 社区
 # db：豆瓣
-^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ https://m.douban.com/search/?query=$1 302
+^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ https://www.douban.com/search?source=suggest&q=$1 302
 
 # zh: 知乎
 ^https:\/\/duckduckgo.com\/\?q=zh\+([^&]+).+ https://www.zhihu.com/search?type=content&q=$1 302
@@ -70,19 +70,19 @@
 
 # > 购物
 # zdm: 什么值得买
-^https:\/\/duckduckgo.com\/\?q=zdm\+([^&]+).+ https://search.m.smzdm.com/?v=b&s=$1 302
+^https:\/\/duckduckgo.com\/\?q=zdm\+([^&]+).+ https://search.smzdm.com/?c=home&s=$1&v=b 302
 
 # amz: 亚马逊
 ^https:\/\/duckduckgo.com\/\?q=amz\+([^&]+).+ https://www.amazon.cn/gp/aw/s/?k=$1 302
 
 # jd : 京东
-^https:\/\/duckduckgo.com\/\?q=jd\+([^&]+).+ https://so.m.jd.com/ware/search.action?keyword=$1 302
+^https:\/\/duckduckgo.com\/\?q=jd\+([^&]+).+ https://search.jd.com/Search?keyword=$1 302
 
 # tb: 淘宝
-^https:\/\/duckduckgo.com\/\?q=tb\+([^&]+).+ https://s.m.taobao.com/h5?q=$1 302
+^https:\/\/duckduckgo.com\/\?q=tb\+([^&]+).+ https://s.taobao.com/search?q=$1 302
 
 # tm: 天猫
-^https:\/\/duckduckgo.com\/\?q=tm\+([^&]+).+ https://s.m.tmall.com/m/search.htm?q=$1 302
+^https:\/\/duckduckgo.com\/\?q=tm\+([^&]+).+ https://list.tmall.com/search_product.htm?q=$1 302
 
 # 视频资源
 
@@ -90,13 +90,13 @@
 ^https:\/\/duckduckgo.com\/\?q=ac\+([^&]+).+ https://www.acfun.cn/search?keyword==$1 302
 
 # bli (哔哩哔哩) 
-^https:\/\/duckduckgo.com\/\?q=bli\+([^&]+).+ https://m.bilibili.com/search?keyword=$1 302
+^https:\/\/duckduckgo.com\/\?q=bli\+([^&]+).+ https://search.bilibili.com/all?keyword=$1 302
 
 # ytb  (YouTube)
 ^https:\/\/duckduckgo.com\/\?q=ytb\+([^&]+).+ https://www.youtube.com/results?search_query=$1 302
 
 # ph  (PornHub) 
-^https:\/\/duckduckgo.com\/\?q=ph\+([^&]+).+ https://cn.pornhub.com/video/search?search=$1 302
+^https:\/\/duckduckgo.com\/\?q=ph\+([^&]+).+ https://pornhub.com/video/search?search=$1 302
 
 # gd  (Google Drive)
 ^https:\/\/duckduckgo.com\/\?q=gd\+([^&]+).+ https://www.google.com/search?q=%22Google+Drive%22+$1 302
